@@ -1,0 +1,6 @@
+How to use:
+1. Upload all files to hosting root (public_html)
+2. Open index.html
+3. Done
+
+For changes or support, contact developer.

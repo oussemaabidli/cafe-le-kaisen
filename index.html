@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Caffee Le Kaisen — Café & Nature Escape</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SEO META TAGS -->
+    <meta
+      name="description"
+      content="Caffee Le Kaisen — A peaceful nature café with brunch, coffee, horses, and family activities in Ariana, Tunisia. Fresh food, beautiful views, and a calm escape from the city."
+    />
+    <meta
+      name="keywords"
+      content="cafe ariana, brunch tunisia, coffee shop tunisia, horse riding cafe, family cafe tunisia, nature cafe, bir mcherga"
+    />
+    <meta name="author" content="Caffee Le Kaisen" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph (Social Media) -->
+    <meta
+      property="og:title"
+      content="Caffee Le Kaisen — Café & Nature Escape"
+    />
+    <meta
+      property="og:description"
+      content="Enjoy brunch, coffee, horses, nature views, and family activities in Ariana."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="YOUR_REAL_IMAGE_URL.jpg" />
+    <meta property="og:url" content="https://yourdomain.com" />
+
+    <!-- Mobile & Branding -->
+    <meta name="theme-color" content="#6b8f6b" />
+    <link rel="stylesheet" href="style.css" />
+    <source src="script.js" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="nav">
+          <div class="brand">
+            <div class="logo">
+              <img
+                id="k"
+                src="images/335859444_1966621630397045_435816786424758397_n.jpg"
+                alt="le Kaisen"
+              />
+            </div>
+            <div>
+              <div style="font-weight: 700">Caffee Le Kaisen</div>
+              <div class="small">Cebalet Ben Ammar - Route de Jabbes</div>
+            </div>
+          </div>
+          <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">gallery</a>
+            <a href="#activities">Activities</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </nav>
+      </header>
+      <main id="home">
+        <section class="hero">
+          <div class="hero-card">
+            <h1>Escape to Nature — Brunch, Coffee & Horses</h1>
+            <p class="lead">
+              Caffee Le Kaisen is a peaceful family-friendly café surrounded by
+              green fields and Arabian horses. Fresh food, warm hospitality, and
+              a calm place to breathe — perfect for brunch, family outings, and
+              slow afternoons.
+            </p>
+            <div class="chips">
+              <span class="chip">Brunch & Fresh Food</span>
+              <span class="chip">Horse Riding & Views</span>
+              <span class="chip">Kids Playground</span>
+              <span class="chip">Cash Only</span>
+            </div>
+
+            <div
+              style="
+                margin-top: 18px;
+                display: flex;
+                gap: 12px;
+                align-items: center;
+              "
+            >
+              <a class="btn" href="#contact">Get Directions</a>
+              <a
+                href="#menu"
+                style="
+                  padding: 10px 14px;
+                  border-radius: 12px;
+                  text-decoration: none;
+                  border: 1px solid #eee;
+                  font-weight: 700;
+                "
+                >View Menu</a
+              >
+            </div>
+
+            <div class="gallery" style="margin-top: 16px">
+              <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=7d7f6d4c2b2a8167f0c4ea6a3f6b2a1c"
+                alt="coffee and nature"
+                data-large
+              />
+              <img
+                src="https://images.unsplash.com/photo-1504198458649-3128b932f49b?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=b6a7a6f5f21c4f3a4d9b6a6a8b6c7d2f"
+                alt="horses in field"
+                data-large
+              />
+              <img
+                src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=2b3a1c1f3b7c5b1f2f3b1a3c5d6e7f8a"
+                alt="outdoor seating"
+                data-large
+              />
+            </div>
+          </div>
+
+          <aside style="display: flex; flex-direction: column; gap: 14px">
+            <div class="card">
+              <h3 style="margin: 0 0 8px">Opening Hours</h3>
+              <div class="small">Tue - Sun: 09:00 — 20:00<br />Mon: Closed</div>
+              <hr
+                style="
+                  margin: 12px 0;
+                  border: none;
+                  border-top: 1px solid #efefef;
+                "
+              />
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <div>
+                  <div style="font-weight: 700">Average Price</div>
+                  <div class="small">TND 20–30 per person</div>
+                </div>
+                <div class="badge">Cash Only</div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h4 style="margin: 0 0 8px">Visit Tips</h4>
+              <ul class="small" style="margin: 0; padding-left: 18px">
+                <li>Parking available on-site</li>
+                <li>Map advisable at night — the road is dimly lit</li>
+                <li>Great spot for family brunch & photos</li>
+              </ul>
+            </div>
+
+            <div class="card small">
+              <strong>What guests mention:</strong>
+              <p style="margin: 8px 0 0">
+                Fresh authentic food, friendly staff, peaceful views, and a
+                unique horse experience. Sometimes limited menu options — arrive
+                early for best selection.
+              </p>
+            </div>
+          </aside>
+        </section>
+
+        <!-- MENU -->
+        <section id="menu">
+          <div class="cols">
+            <div class="menu-section" id="menu">
+              <h1 class="menu-title">Notre Menu</h1>
+
+              <!-- Buttons -->
+              <button class="scroll-btn left" onclick="scrollMenu(-1)">
+                &#10094;
+              </button>
+              <button class="scroll-btn right" onclick="scrollMenu(1)">
+                &#10095;
+              </button>
+
+              <!-- Slider -->
+              <div class="menu-slider" id="menuSlider">
+                <!-- Salades -->
+                <div class="menu-card">
+                  <h2>Nos Salades</h2>
+
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Salade César</span>
+                      <span class="item-desc"
+                        >Poulet grillé, parmesan, croûtons, sauce César</span
+                      >
+                    </div>
+                    <span class="price">17 dt</span>
+                  </div>
+
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Salade Saumon</span>
+                      <span class="item-desc"
+                        >Saumon fumé, avocat, citron, sauce maison</span
+                      >
+                    </div>
+                    <span class="price">21 dt</span>
+                  </div>
+
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Salade Italienne</span>
+                      <span class="item-desc"
+                        >Tomates, mozzarella, basilic, huile d’olive</span
+                      >
+                    </div>
+                    <span class="price">18 dt</span>
+                  </div>
+
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Salade Bresaola</span>
+                      <span class="item-desc"
+                        >Bresaola, roquette, parmesan, citron</span
+                      >
+                    </div>
+                    <span class="price">26 dt</span>
+                  </div>
+                </div>
+
+                <!-- Plats -->
+                <div class="menu-card">
+                  <h2>Nos Plats</h2>
+
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Escalope grillée</span>
+                      <span class="item-desc"
+                        >Escalope de poulet grillée, accompagnement maison</span
+                      >
+                    </div>
+                    <span class="price">19 dt</span>
+                  </div>
+
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Escalope panée</span>
+                      <span class="item-desc"
+                        >Poulet pané croustillant, sauce spéciale</span
+                      >
+                    </div>
+                    <span class="price">21 dt</span>
+                  </div>
+
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Penne poulet</span>
+                      <span class="item-desc"
+                        >Poulet sauté, crème fraîche, parmesan</span
+                      >
+                    </div>
+                    <span class="price">22 dt</span>
+                  </div>
+
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Penne 4 fromages</span>
+                      <span class="item-desc"
+                        >Mozzarella, gorgonzola, parmesan, crème</span
+                      >
+                    </div>
+                    <span class="price">22 dt</span>
+                  </div>
+
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Linguine</span>
+                      <span class="item-desc"
+                        >Pâtes fraîches, sauce maison</span
+                      >
+                    </div>
+                    <span class="price">23 dt</span>
+                  </div>
+
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Pizza escalope</span>
+                      <span class="item-desc"
+                        >Escalope, mozzarella, sauce tomate</span
+                      >
+                    </div>
+                    <span class="price">23 dt</span>
+                  </div>
+
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Tagliatelle Mare e Monti</span>
+                      <span class="item-desc"
+                        >Fruits de mer, champignons, crème</span
+                      >
+                    </div>
+                    <span class="price">28 dt</span>
+                  </div>
+
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Spaghetti fruits de mer</span>
+                      <span class="item-desc"
+                        >Crevettes, calamars, sauce tomate</span
+                      >
+                    </div>
+                    <span class="price">28 dt</span>
+                  </div>
+
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Filet de bœuf</span>
+                      <span class="item-desc"
+                        >Filet tendre, sauce au choix</span
+                      >
+                    </div>
+                    <span class="price">36 dt</span>
+                  </div>
+                </div>
+
+                <!-- Pizzas -->
+                <div class="menu-card">
+                  <h2>Nos Pizzas</h2>
+
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Margarita</span
+                      ><span class="item-desc"
+                        >Sauce tomate, mozzarella, basilic</span
+                      >
+                    </div>
+                    <span class="price">15 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Thon</span
+                      ><span class="item-desc">Thon, olives, mozzarella</span>
+                    </div>
+                    <span class="price">22 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Végétarienne</span
+                      ><span class="item-desc">Légumes frais, mozzarella</span>
+                    </div>
+                    <span class="price">19 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Pepperoni</span
+                      ><span class="item-desc">Pepperoni, fromage fondu</span>
+                    </div>
+                    <span class="price">22 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Reine</span
+                      ><span class="item-desc">Jambon, champignons</span>
+                    </div>
+                    <span class="price">21 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Poulet champignon</span
+                      ><span class="item-desc">Poulet, champignons, crème</span>
+                    </div>
+                    <span class="price">23 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">4 fromages</span
+                      ><span class="item-desc">Sélection de fromages</span>
+                    </div>
+                    <span class="price">24 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Mare e Monti</span
+                      ><span class="item-desc"
+                        >Fruits de mer & champignons</span
+                      >
+                    </div>
+                    <span class="price">26 dt</span>
+                  </div>
+                </div>
+
+                <!-- Crêpes Sucrées -->
+                <div class="menu-card">
+                  <h2>Crêpes Sucrées</h2>
+
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Nutella</span
+                      ><span class="item-desc">Crêpe chaude, Nutella</span>
+                    </div>
+                    <span class="price">12.5 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Nutella amande</span
+                      ><span class="item-desc">Nutella, amandes grillées</span>
+                    </div>
+                    <span class="price">14.5 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Nutella spéculoos</span
+                      ><span class="item-desc">Nutella, spéculoos</span>
+                    </div>
+                    <span class="price">15.5 dt</span>
+                  </div>
+                </div>
+
+                <!-- Crêpes Salées -->
+                <div class="menu-card">
+                  <h2>Crêpes Salées</h2>
+
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Thon fromage</span
+                      ><span class="item-desc">Thon, fromage fondu</span>
+                    </div>
+                    <span class="price">12.5 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Jambon fromage</span
+                      ><span class="item-desc">Jambon, fromage</span>
+                    </div>
+                    <span class="price">11.5 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Poulet fromage</span
+                      ><span class="item-desc">Poulet, fromage</span>
+                    </div>
+                    <span class="price">12.5 dt</span>
+                  </div>
+                </div>
+
+                <!-- Pancakes -->
+                <div class="menu-card">
+                  <h2>Pancakes</h2>
+
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Nutella</span
+                      ><span class="item-desc">Pancakes moelleux, Nutella</span>
+                    </div>
+                    <span class="price">11.5 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Nutella spéculoos</span
+                      ><span class="item-desc">Nutella, spéculoos</span>
+                    </div>
+                    <span class="price">15.5 dt</span>
+                  </div>
+                </div>
+
+                <!-- Cafés -->
+                <div class="menu-card">
+                  <h2>Nos Cafés</h2>
+
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Expresso</span
+                      ><span class="item-desc">Café serré italien</span>
+                    </div>
+                    <span class="price">4 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Cappuccino</span
+                      ><span class="item-desc">Espresso, lait mousseux</span>
+                    </div>
+                    <span class="price">4.5 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Américain</span
+                      ><span class="item-desc">Café long</span>
+                    </div>
+                    <span class="price">4 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Café crème</span
+                      ><span class="item-desc">Café, crème chaude</span>
+                    </div>
+                    <span class="price">5 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Cappuccino chantilly</span
+                      ><span class="item-desc">Crème fouettée</span>
+                    </div>
+                    <span class="price">6.5 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Frappuccino noisette</span
+                      ><span class="item-desc">Café glacé, noisette</span>
+                    </div>
+                    <span class="price">10.5 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Frappuccino vanille</span
+                      ><span class="item-desc">Café glacé, vanille</span>
+                    </div>
+                    <span class="price">10.5 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Chocolat chaud</span
+                      ><span class="item-desc">Chocolat fondant</span>
+                    </div>
+                    <span class="price">5.5 dt</span>
+                  </div>
+                </div>
+
+                <!-- Thés -->
+                <div class="menu-card">
+                  <h2>Nos Thés</h2>
+
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Thé</span
+                      ><span class="item-desc">Thé chaud traditionnel</span>
+                    </div>
+                    <span class="price">4 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Thé aux amandes</span
+                      ><span class="item-desc">Thé parfumé aux amandes</span>
+                    </div>
+                    <span class="price">5 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Thé infusion</span
+                      ><span class="item-desc">Infusion naturelle</span>
+                    </div>
+                    <span class="price">5.5 dt</span>
+                  </div>
+                </div>
+
+                <!-- Jus -->
+                <div class="menu-card">
+                  <h2>Nos Jus</h2>
+
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Citronnade</span
+                      ><span class="item-desc">Citron frais pressé</span>
+                    </div>
+                    <span class="price">7 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Citronnade amandes</span
+                      ><span class="item-desc">Citron, amandes</span>
+                    </div>
+                    <span class="price">9.5 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Orange</span
+                      ><span class="item-desc">Orange fraîche</span>
+                    </div>
+                    <span class="price">7 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Fraise</span
+                      ><span class="item-desc">Fraise naturelle</span>
+                    </div>
+                    <span class="price">8 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Kiwi banane</span
+                      ><span class="item-desc">Kiwi & banane</span>
+                    </div>
+                    <span class="price">10 dt</span>
+                  </div>
+                  <div class="menu-item">
+                    <div class="item-text">
+                      <span class="item-name">Ananas banane</span
+                      ><span class="item-desc">Ananas & banane</span>
+                    </div>
+                    <span class="price">10 dt</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <aside>
+              <div class="card">
+                <h3>Specialities</h3>
+                <p class="small">
+                  Brunch, coffee-based drinks, and homemade desserts. Best
+                  enjoyed outdoors with a view of the horses.
+                </p>
+                <hr
+                  style="
+                    margin: 12px 0;
+                    border: none;
+                    border-top: 1px solid #efefef;
+                  "
+                />
+                <div style="display: flex; gap: 8px; flex-wrap: wrap">
+                  <span class="chip">Family Friendly</span>
+                  <span class="chip">Outdoor Seating</span>
+                  <span class="chip">Horse Rides</span>
+                </div>
+              </div>
+
+              <div class="card" style="margin-top: 12px">
+                <h4>Booking</h4>
+                <p class="small">
+                  Walk-ins welcomed. For large groups, call ahead.
+                </p>
+              </div>
+              <div id="gallery">
+                <section class="image-section">
+                  <h1>Gallery</h1>
+
+                  <div class="gallery-card">
+                    <img
+                      id="galleryImage"
+                      src="images/téléchargement (1).jpg"
+                      alt="Gallery image"
+                    />
+                  </div>
+                </section>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <!-- ACTIVITIES -->
+        <section id="activities">
+          <h2>Activities & Experience</h2>
+          <div class="card" style="margin-top: 12px">
+            <p class="small">
+              Caffee Le Kaisen combines hearty brunch with a nature experience.
+              Watch Arabian horses roam, take short guided rides, and let kids
+              enjoy the playground. It’s a calm place for family photos, casual
+              gatherings, and quiet reading in the sunshine.
+            </p>
+            <div
+              style="
+                display: flex;
+                gap: 12px;
+                margin-top: 14px;
+                flex-wrap: wrap;
+              "
+            >
+              <div style="flex: 1; min-width: 200px" class="card">
+                <strong>Horse Watching & Rides</strong>
+                <p class="small">
+                  Short rides and supervised interactions available. Best for
+                  families and kids.
+                </p>
+              </div>
+              <div style="flex: 1; min-width: 200px" class="card">
+                <strong>Playground</strong>
+                <p class="small">A shaded play area for little ones.</p>
+              </div>
+              <div style="flex: 1; min-width: 200px" class="card">
+                <strong>Outdoor Seating</strong>
+                <p class="small">
+                  Tables with views, perfect for relaxed conversations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CONTACT -->
+        <section id="contact">
+          <div class="cols">
+            <div>
+              <h2>Contact & Location</h2>
+              <p class="small">
+                Café & Restaurant situé dans un club d’équitation à 5 minutes de
+                Geant Tunis City. We recommend using the map when visiting at
+                night — the approach road can be dimly lit.
+              </p>
+              <div class="card" style="margin-top: 12px">
+                <strong>Address</strong>
+                <div class="small">
+                  Cebalet Ben Ammar - Route de Jabbes (Exact address to be
+                  added)
+                </div>
+                <hr
+                  style="
+                    margin: 12px 0;
+                    border: none;
+                    border-top: 1px solid #efefef;
+                  "
+                />
+                <strong>Phone</strong>
+                <div class="small">+216 99 331 192</div>
+                <strong style="display: block; margin-top: 8px"
+                  >Opening Hours</strong
+                >
+                <div class="small">Tue - Sun: 0:00 — 20:00</div>
+
+                <div style="margin-top: 12px">
+                  <a
+                    href="
+                    https://mail.google.com/mail/u/0/#search/espacelekaizen%40gmail.com"
+                    class="btn"
+                    >Email Us</a
+                  >
+                </div>
+              </div>
+
+              <div style="margin-top: 12px" class="card">
+                <h4>FAQ</h4>
+                <p class="small">
+                  <strong>Cards?</strong> Currently cash only. Please come
+                  prepared.<br /><strong>Parking?</strong> Yes, on-site
+                  parking.<br /><strong>Pets?</strong> Ask at the counter.
+                </p>
+              </div>
+            </div>
+
+            <aside>
+              <div class="card">
+                <iframe
+                  class="map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d801.706290609572!2d10.097955983010495!3d36.90925535188042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e2cda132156725%3A0x579bae00be2149f4!2sLe%20Kaizen%20Caf%C3%A9!5e1!3m2!1sen!2stn!4v1765981201871!5m2!1sen!2stn"
+                  aria-hidden="false"
+                  tabindex="0"
+                ></iframe>
+                <p class="small" style="margin-top: 8px">
+                  Tip: use turn-by-turn directions on Google Maps. Road lighting
+                  is limited at night.
+                </p>
+              </div>
+
+              <div class="card" style="margin-top: 12px">
+                <h4>Plan Your Visit</h4>
+                <p class="small">
+                  Best times: mornings and early afternoons for full menu and
+                  calm atmosphere. Weekends can be busy — come early for brunch.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+          "
+        >
+          <div>
+            <div style="font-weight: 700">Caffee Le Kaisen</div>
+            <div class="small">
+              A relaxed café with horses & nature — Ariana
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo">
+            <img
+              id="k"
+              src="images/335859444_1966621630397045_435816786424758397_n.jpg"
+              alt="le Kaisen"
+            />
+          </div>
+          <div>
+            <div class="footer-title">Caffee Le Kaisen</div>
+            <div class="footer-sub">Ariana — Café, Nature & Horses</div>
+          </div>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://instagram.com/le.kaizen.cafe/" target="_blank">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+              alt="Instagram"
+            />
+          </a>
+
+          <a
+            href="https://www.facebook.com/p/Le-Kaizen-100090408266655/?locale=fr_FR"
+            target="_blank"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3128/3128208.png"
+              alt="Facebook"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="year"></span> Caffee Le Kaisen — All rights reserved
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
